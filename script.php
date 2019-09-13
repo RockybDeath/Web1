@@ -102,6 +102,9 @@ function resultPage(){
         $sec=$endTime[1]-$startTime[1]; $mSec=$endTime[0]-$startTime[0];
         if($sec===0) $Time=round(($mSec*1000),3);
         else $Time=round(($sec+$mSec)*1000,3);
+        $x=str_replace('+',"",$x);
+        $y=str_replace('+',"",$y);
+        $r=str_replace('+',"",$r);
         $_SESSION["results"][]=array("X"=>$x,"Y"=>$y, "R"=>$r, "Result"=>$result, "Time"=>$Time, "CurrentTime"=>date("H:i:s", strtotime('+3 hour')));
         $table = resultTable();
         echo writeHtml($table);
