@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Don't be bad lab</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="TestArguments.js"></script>
+</head>
+<body id="mainBody">
+<table>
+<tr>
+    <th Shapka="cool">Kudymov Valera Sergeewitch<br>
+    Group P3202<br>Variant 202011</th>
+</tr>
+    <table id="supTable">
+    <tr>
+        <th id="leftColumn">
+            <p><img src="areas.png"> </p>
+        </th>
+        <form method="get" action="script.php" onsubmit="onSubmit()">
+        <th id="imStolb">
+            <p>Coordinate Х</p>
+            <select name="X">
+                <option disabled="disabled">Please, choose value</option>
+                <option value="-3">-3</option>
+                <option value="-2">-2</option>
+                <option value="-1">-1</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+            <p class="kaskad">Coordinate Y</p>
+            <input name="Y" autocomplete="off" oninput="onY()" id="Yea" type="text" placeholder="Give me your number"><br>
+            <p>Radius R</p>
+            <select name="R">
+                <option disabled="disabled">Please, choose value again</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+            </select>
+            <br>
+            <p>When you ready, please, click</p>
+            <p id="error"></p>
+            <input type="submit" id="Button" value="Send">
+        </th>
+        </form>
+    </tr>
+    </table>
+</table>
+</body>
+</html>
